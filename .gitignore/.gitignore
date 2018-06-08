@@ -1,0 +1,52 @@
+Description
+
+Given a sequence S of digits and a number k, for example S = “4113” and k = 2.
+In the sequence S, there is one 4, followed by two 1, followed by one 3. 
+Then we can produce a new sequence S’ = 142113.
+(note : 
+“one 4” -> 14
+“two 1” -> 21
+“one 3” -> 13
+)
+
+This is the first round, and we need to do it for k rounds.
+
+The input of i round is the output from i-1 round. (i>1)
+When i = 1, the input is sequence S, we will give you.
+
+Now, we want you to print the output after k rounds.
+
+ 
+
+Another example : 
+
+S = "323", and k = 1
+
+then we have one 3,followed one 2, and followed one 3
+
+so S' would be "131213"
+
+(note:
+
+"one 3" -> 13
+
+"one 2" -> 12
+
+"one 3" -> 13
+
+)
+Input
+
+The input includes multiple test cases. 
+The first of the input is an integer T (T <= 1000) specifying the number of test cases. 
+For each case, the first line contains the sequence S.
+The second line contains one integer k.
+
+limits 
+Case 1 : length of S <= 5, 1<=k<=2
+Case 2 : length of S <= 100, 1<=k<=2
+Case 3 : length of S <= 1000, 1<=k<=10
+Case 4 : length of S <= 1000, 1<=k<=10
+Output
+
+For each test case outputs one line, the output after k rounds.  
